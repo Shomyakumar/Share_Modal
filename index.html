@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <div id="wrapper">
+        <div class="bg-image"></div>
+        <div class="container">
+            <div class="card-container">
+                <div class="image">
+                    <img src="pic.jpeg" alt="">
+                </div>
+                <div class="card-contents">
+                    <h2>I am<br> Shomya kumar</h2>
+                    <p>A  B.Tech CSE third year student from Dev Bhoomi Uttarakhand University</p>
+                    <p class="contact-me">You can contact Me and follow me on social media also.</p>
+                    <div class="buttons">
+                        <button class="btn" id="follow-me">Follow Me</button>
+                        <button class="btn">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Share Modal -->
+        <div class="modal-container">
+            <div class="modal-header">
+                <p>Share my profile</p>
+                <div class="close-btn"><i class="fa fa-close"></i></div>
+            </div>
+            <div class="line"></div>
+            <div class="icon-container">
+                <p>Share this via</p>
+                <div class="icons">
+                    <a href="#" class="icon" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="icon" id="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                      <a href="#" class="icon" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="#" class="icon" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                      </a>
+                      <a href="#" class="icon" id="telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

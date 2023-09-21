@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+    width:100vw;
+    height:auto;
+    background-color: rgb(124, 207, 180);
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+.bg-image{
+    /* background-image: url("https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="); */
+    background-image: url("https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     position:absolute;
+     height:100%;
+     width:100%;
+     z-index: -1;
+     filter:blur(5px);
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.card-container{
+  
+    display:flex;
+    background-color: #e1eedd;
+    max-height:400px;
+    max-width: 540px;
+    border-radius:1rem;
+    overflow:hidden;
+    box-shadow: 0px 0px 9px rgb(0, 113, 66);
+}
+
+.image img{
+    max-height:400px;
+    max-width:300px;
+}
+.card-contents{
+    padding:20px;
+    
+}
+.card-contents h2{
+   
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:2rem;
+    padding-bottom:20px;
+    color:rgb(0, 71, 29)
+}
+.card-contents p{
+    /* font-family: sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    font-size:1rem;
+    max-width: 280px;
+    padding-bottom:20px;
+    color:#033a0c;
+    font-weight: 500;
+    
+}
+.buttons{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.btn{
+    border:none;
+    background-color: #ee934d;
+    padding-top:13px;
+    padding-bottom:13px;
+    color:whitesmoke;
+    font-weight: bold;
+    border-radius:0.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.btn:hover{
+    background-color:#f76d04;
+    cursor:pointer;
+}
+
+/* modal styles */
+.modal-container{
+    position:fixed;
+    left:50%;
+    top:50%;
+    translate:-50% -50%;
+    max-width:380px;
+    padding:25px;
+    border:2px solid white;
+    border-radius:12px;
+    scale:0;
+    transition:0.5s ease-in-out;
+    z-index: 5;
+    box-shadow: 0 0 8px white;
+    background-color: #74f9c8;
+
+}
+.active{
+    scale:1;
+}
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:1rem;
+    font-size: 2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-bottom: 1rem;
+    
+}
+.line{
+    height:2px;
+    background-color:#03744b
+}
+.icon-container p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-top:1rem;
+    padding-bottom:1.5rem;
+}
+.icons{
+    padding-bottom:1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon {
+    
+    padding: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+
+  .icon i {
+    font-size: 22px;
+  }
+  
+  #facebook {
+    color: #1771e6;
+    border: 2px solid #1771e6;
+  }
+  #facebook:hover {
+    background-color: #1771e6;
+    color: #fff;
+  }
+  
+  #twitter {
+    color:rgb(57, 178, 226);
+    border: 2px solid rgb(5, 130, 179);
+  }
+  #twitter:hover {
+    background-color:rgb(5, 130, 179);
+    color: #fff;
+  }
+  
+  #instagram {
+    color: #cb2770;
+    border: 2px solid #cb2770;
+  }
+  #instagram:hover {
+    background-color: #cb2770;
+    color: #fff;
+  }
+  
+  #whatsapp {
+    color: #03a731;
+    border: 2px solid #028928;
+  }
+  #whatsapp:hover {
+    background-color: #017622;
+    color: #fff;
+  }
+  
+  #telegram {
+    color: #0081c2;
+    border: 2px solid #0081c2;
+  }
+  #telegram:hover {
+    background-color: #0081c2;
+    color: #fff;
+  }
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(82, 185, 151, 0.74);
+    z-index: 2;
+}
+.overlay-active{
+    opacity:1;
+    pointer-events: initial;
+}
+
+@media(max-width:550px)
+  {
+    
+ .image img{
+      width:100%;
+      height: 100%;
+      /* object-fit: cover; */
+
+  }
+  .contact-me{
+    display:none;
+  }
+  .card-contents h2{
+   
+    font-size:1.5rem;
+    padding-bottom:10px;
+}
+.card-contents p{
+    padding-bottom:10px;   
+}
+
+}
